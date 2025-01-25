@@ -121,3 +121,10 @@ testcases:
         type: tavern
         tavern:
           filepath: test_10_user_feed.tavern.yml
+      - name: Перезагрузка приложения
+        type: reload
+      - name: Получение промокода по ID
+        score: 0.04
+        type: tavern
+        tavern:
+          filepath: test_10_user_promo.tavern.yml

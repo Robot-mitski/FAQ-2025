@@ -4,8 +4,6 @@ test_name: Получение промокодов компанией
 includes:
   - !include components/basic_auth.yml
 
-# Перед этим тестом необходимо создать промокоды с помощью test_04_business_promo_create_valid.tavern.yml
-
 stages:
   - type: ref
     id: basic_auth_reg1
