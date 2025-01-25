@@ -1135,7 +1135,7 @@ components:
         date:
           type: string
           format: date-time
-          description: Дата и время создания комментария. Часовой пояс может быть любым, необходимо отразить его в формате RFC3339 (с суффиксом Zhh:mm).
+          description: Дата и время создания комментария. Часовой пояс может быть любым, необходимо отразить его в формате RFC3339 (с суффиксом Zhh:mm, вместо Z может быть + или -).
           example: 2025-01-02T15:04:05Z07:00
         author:
           type: object
@@ -1146,6 +1146,14 @@ components:
               $ref: "#/components/schemas/UserSurname"
             avatar_url:
               $ref: "#/components/schemas/UserAvatarURL"
+          required:
+            - name
+            - surname
+      required:
+        - id
+        - text
+        - date
+        - author
 
     CompanyId:
       readOnly: true
