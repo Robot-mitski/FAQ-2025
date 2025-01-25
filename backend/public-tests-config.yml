@@ -128,3 +128,11 @@ testcases:
         type: tavern
         tavern:
           filepath: test_10_user_promo.tavern.yml
+  - name: "11/user/promo/{id}/like"
+    enabled: true
+    steps:
+      - name: Валидация лайков
+        score: 0.07
+        type: tavern
+        tavern:
+          filepath: test_11_user_like.tavern.yml
