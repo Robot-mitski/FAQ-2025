@@ -136,7 +136,7 @@ testcases:
         type: tavern
         tavern:
           filepath: test_11_user_like.tavern.yml
-  - name: "11/user/promo/{id}/comments"
+  - name: "12/user/promo/{id}/comments"
     enabled: true
     steps:
       - name: Создание, редактирование и получение комментариев к промокодам
@@ -144,3 +144,11 @@ testcases:
         type: tavern
         tavern:
           filepath: test_12_user_comments.tavern.yml
+  - name: "13/user/promo/{id}/activate"
+    enabled: true
+    steps:
+      - name: Активация промокодов [простые случаи]
+        score: 0.2
+        type: tavern
+        tavern:
+          filepath: test_13_user_promo_activate.tavern.yml
